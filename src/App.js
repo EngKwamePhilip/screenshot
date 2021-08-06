@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
 
-  const API_KEY = "adc8e3ff6947476e9b7bcfcc20a5e01b"
+  const API_KEY = "bae204ef396649168f81d0d86f1b66d8"
   const [search, setSearch] = useState("https://www.brescadc.com/");
   const [img, setImg] = useState("");
   const [error, setError] = useState(false);
@@ -44,6 +44,7 @@ function App() {
         <div className="container">
           <form onSubmit={searchScreenShots}>
             <input type="text"
+            placeholder="Enter Valid URL Here"
             autoFocus
               value={search}
               onChange={(e)=>setSearch(e.target.value)}
